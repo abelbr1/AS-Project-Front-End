@@ -57,6 +57,7 @@ const SongModal: React.FC = () => {
   const handleAddSong = () => {
     dispatch(addSong(newSong));
     setIsModalOpen(false);
+    setNewSong({ title: "", artist: "", album: "", genre: "" });
   };
 
   const showModal = () => {
