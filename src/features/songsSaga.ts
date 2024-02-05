@@ -32,7 +32,7 @@ import { PayloadAction } from "@reduxjs/toolkit";
 
 import { Song } from "./songsSlice";
 
-const API_SONGS_URL = "https://song-api-as.onrender.com/";
+const API_SONGS_URL = "https://song-api-as.onrender.com/song";
 
 function* fetchSongs() {
   try {
