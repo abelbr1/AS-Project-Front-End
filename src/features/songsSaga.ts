@@ -80,7 +80,7 @@ function* fetchTotalNumberOfSongs() {
   try {
     const response: AxiosResponse = yield call(
       axios.get,
-      "https://new-site-06c8.onrender.com/song/stat/totalNumberOfSongs",
+      "https://song-api-as.onrender.com/song/stat/totalNumberOfSongs",
     );
     const totalNumberOfSongs: number = response.data.totalNumberOfSongs;
     console.log("Total number of songs:", totalNumberOfSongs);
@@ -93,7 +93,7 @@ function* fetchTotalNumberOfAlbums() {
   try {
     const response: AxiosResponse = yield call(
       axios.get,
-      "https://new-site-06c8.onrender.com/song/stat/totalNumberOfAlbums",
+      "https://song-api-as.onrender.com/song/stat/totalNumberOfAlbums",
     );
     const totalNumberOfAlbums: number = response.data.totalNumberOfAlbums;
     console.log("Total number of Albums:", totalNumberOfAlbums);
@@ -106,7 +106,7 @@ function* fetchTotalNumberOfArtist() {
   try {
     const response: AxiosResponse = yield call(
       axios.get,
-      "https://new-site-06c8.onrender.com/song/stat/totalNumberOfArtist",
+      "https://song-api-as.onrender.com/song/stat/totalNumberOfArtist",
     );
     const totalNumberOfArtist: number = response.data.totalNumberOfArtist;
     console.log("Total number of Artist:", totalNumberOfArtist);
@@ -119,7 +119,7 @@ function* fetchTotalNumberOfGenres() {
   try {
     const response: AxiosResponse = yield call(
       axios.get,
-      "https://new-site-06c8.onrender.com/song/stat/totalNumberOfGenres",
+      "https://song-api-as.onrender.com/song/stat/totalNumberOfGenres",
     );
     const totalNumberOfGenres: number = response.data.totalNumberOfGenres;
     console.log("Total number of Geres:", totalNumberOfGenres);
@@ -132,7 +132,7 @@ function* fetchArtistStat() {
   try {
     const response: AxiosResponse = yield call(
       axios.get,
-      "https://new-site-06c8.onrender.com/song/stat/ArtistStat",
+      "https://song-api-as.onrender.com/song/stat/ArtistStat",
     );
     const artistStat: [] = response.data.songsAndAlbumsEachArtist;
     console.log("artist stats:", artistStat);
@@ -145,7 +145,7 @@ function* fetchAlbumStat() {
   try {
     const response: AxiosResponse = yield call(
       axios.get,
-      "https://new-site-06c8.onrender.com/song/stat/AlbumStat",
+      "https://song-api-as.onrender.com/song/stat/AlbumStat",
     );
     const albumStat: [] = response.data.songsOfEachAlbum;
     console.log("album stats:", albumStat);
@@ -158,7 +158,7 @@ function* fetchGenreStat() {
   try {
     const response: AxiosResponse = yield call(
       axios.get,
-      "https://new-site-06c8.onrender.com/song/stat/GenreStat",
+      "https://song-api-as.onrender.com/song/stat/GenreStat",
     );
     const genreStat: [] = response.data.songsOfEachGenre;
     console.log("genre stats:", genreStat);
